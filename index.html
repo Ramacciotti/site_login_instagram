@@ -1,0 +1,123 @@
+<!-- Definindo Html -->
+<!DOCTYPE html>
+
+<!-- Definindo Linguagem do Site -->
+<html lang="pt-br">
+
+    <!-- HEAD ---------------------------------------------------------------------------------------------------------------->
+    <head>
+
+        <!-- 1) Configuração de Caractere: Padrão de Codificação Latino -->
+        <meta charset="UTF-8">
+
+        <!-- 2) Largura da página = largura do dispositivo -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+
+        <!-- 3) Título do Site -->
+        <title>Instagram</title>
+
+        <!-- 4) Chamar CSS -->
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    </head>
+
+    <!-- BODY ----------------------------------------------------------------------------------------------------------->
+    <body>
+
+        <!-- Container do Site -->
+        <div id ="site_wrapper"> 
+
+            <!-- 1 # Coluna Celular ...................................................................................... -->
+            <div id ="column_cellphone"> 
+
+                <!-- 1) Imagem do Celular -->
+                <img src="images/instagram_cellphone.png" alt="Celular que mostra a tela do instagram">
+
+            </div>
+            
+            <!-- 2 # Coluna Login ..................................................................................... -->
+            <div id="column_login"> 
+
+                <!-- 1) Bloco que contém logo, foto, login e logout -->
+                <section id="login_B1" class="login_bloco">
+
+                    <!-- A) Logo do Instagram -->
+                    <div id="login_logo">
+                        
+                        <!-- I) Logo -->
+                        <img src="images/Instagram_logo.svg" alt="Logo do Instagram">
+                    
+                    </div>    
+
+                    <!-- B) Foto de Perfil -->
+                    <div id="login_photo">
+
+                        <!-- I) Foto do Perfil -->
+                        <img src="images/profile_photo.jpg" alt="Foto de Perfil">
+                    
+                    </div>
+
+                    <!-- C) Foto de Perfil -->
+                    <div id="login_botoes">
+
+                        <!-- I) Login -->
+                        <a href="#" class="instagram_login">Continue como Ramaccio.tti</a>
+
+                        <!-- II) Logout -->
+                        <a href="#" class="instagram_logout">Remover Conta</a>                   
+                    
+                    </div>
+
+                </section>
+
+                <!-- 2) Bloco que contém Alternar conta ou Registrar -->
+                <section id="login_B2" class="login_bloco">
+
+                    <!-- A) Foto de Perfil -->
+                    <div id="login_register">
+
+                        <!-- I) Texto -->
+                        <p>Não é Ramaccio.tti?</p>
+
+                        <!-- II) Texto -->
+                        <p>
+                            <!-- 1# Span para estilizar uma palavra no meio do parágrafo-->
+                            <span style="color:#0095F6">Alternar Conta</span> ou
+                            <span style="color:#0095F6">Registrar</span>
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- 3) Bloco que contém apenas um texto -->                
+                <section id="login_B3"> <!-- Get App-->
+
+                    <!-- A) Texto -->
+                    <p>Baixe nosso aplicativo!</p>
+
+                    <!-- B) Container para os Botões -->
+                    <div class="download_app"> <!-- download -->
+
+                        <!-- I) Botão -->
+                        <a href="#" class="botoes_link"> <!-- app-download -->
+                            <img src="./images/google_button.svg">
+                        </a>
+
+                        <!-- II) Botão -->
+                        <a href="#" class="botoes_link"> <!-- app-download -->
+                            <img src="./images/apple_button.svg">
+                        </a>
+
+                    </div>
+
+                </section>               
+
+            </div>   
+
+        </div>
+
+    </body>
+
+</html>
+

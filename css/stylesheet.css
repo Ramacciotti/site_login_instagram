@@ -1,0 +1,232 @@
+/* Resetar componentes XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+    :root {
+        --color_blue: #0095F6;
+        --color_site_background: rgb(243,243,243);
+    }
+
+    *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 14px;
+    }    
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--color_site_background);
+        margin: 0;
+        padding: 0;        
+        display: flex; /* Todos os itens dentro dele ficarão em linha, ocupando o maior espaço dentro daquela linha */
+        justify-content: center; /* Centraliza o conteúdo */
+    }
+
+/* Estilizar Elementos XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+    /* Container do Site */
+    #site_wrapper{
+        display: flex; /* Colocar os itens em linha */
+        align-items: center; /* Centralizar itens verticalmente */
+        justify-content: start; /* Alinhar os itens da esquerda para direita */
+        width: 60%;
+        height: 100vh;    
+    }
+
+        /* #region Coluna do Celular xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        
+            /* Container Principal*/
+            #column_cellphone{
+                display: flex;
+                align-items: center; /* Centralizar itens verticalmente */
+                justify-content: center; /* Centralizar itens horizontalmente */
+                width: 50%;
+            }
+
+                /* Elemento | Imagem do Celular */
+                #column_cellphone > img{
+                    height: 35rem;
+                }
+
+        /* #endregion */    
+
+        /* #region Coluna do Login xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+            /* Container Principal*/
+            #column_login{
+                display: flex;
+                align-items: center; /* Centralizar itens verticalmente */
+                justify-content: space-around; /* Para o flex direction funcionar */
+                flex-direction: column; /* Mudar o eixe de linha (default) para coluna */
+                width: 50%;
+                min-height: 35rem;
+            }
+
+            /* #region Login Classes ====================================================================================*/
+              
+                /* Estilizar Blocos do Login */
+                .login_bloco{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: white;
+                    width: 100%;
+                    padding: 1.3rem 0;
+                    border: 1px solid lightgray;
+                }
+
+                /* Seleciona apenas o primeiro box */
+                .login_bloco:nth-child(1){
+                    min-height: 19rem;
+                }
+
+            /* #endregion */  
+
+            /* #region login B1 | Logo, foto, login e logout ====================================================================*/
+                               
+                /* #region | Logo do Instagram .............................................................................*/
+                
+                    /* Imagem do Logo */
+                    #login_logo > img{
+                        height: 3rem;
+                    }
+
+                /* #endregion */    
+
+                /* #region | Foto de Perfil ......................................................................................*/
+                    
+                    /* Container */
+                    #login_photo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;   
+                    border-radius: 100%;
+                    overflow: hidden;  /* Impede que a imagem não exceda o tamanho da div */              
+                    }
+
+                    /* Imagem */
+                    #login_photo > img{
+                        height: 6rem;                    
+                    }
+
+                /* #endregion */    
+
+                /* #region | Botões ......................................................................................*/
+
+                    /* Container */
+                    #login_botoes{
+                        display: flex;
+                        align-items: center; /* Centralizar itens verticalmente */
+                        justify-content: space-around; /* Para o flex direction funcionar */
+                        flex-direction: column; /* Mudar o eixe de linha (default) para coluna */
+                    }
+
+                    /* Estilizar botões */
+                    .instagram_login{
+                        background-color: var(--color_blue);
+                        color: white;
+                        padding: 8px;
+                        border-radius: 4px;
+                    }
+
+                    .instagram_logout{
+                        color:#0095F6;
+                        margin-top: 1rem;
+                    }
+
+                /* #endregion */        
+
+            /* #endregion */   
+
+            /* #region login B2 | Alternar Conta ou Registrar ====================================================================*/
+                                    
+                /* #region | Registro ................................................................................*/
+                    
+                    /* Parágrafos */
+                    #login_register > p{
+                        color: rgb(160,160,160);
+                        text-align: center;
+                    }
+
+                /* #endregion */  
+
+            /* #endregion */ 
+
+            /* #region login B3 | Botões Download ====================================================================*/
+                                    
+                /* #region | Baixe o nosso app + Botões ................................................................................*/
+                    
+                    /* Get App */
+                    #login_B3 {
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       justify-content: center;
+                       width: 100%;
+                       padding: 1.3rem 0;
+                    }
+
+                /* #endregion */ 
+                
+                /* #region | Div | Botões ................................................................................*/
+                 
+                    /* Container dos Botões */
+                    .download_app{
+                        display: flex;                        
+                        width: 100%;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        padding: 1rem;
+                    }
+
+                    /* Botões */
+                    .botoes_link{
+                        height: 3rem;
+                        width: 10rem;
+                    }
+
+                    /* Tamanho dos botões */
+                    .download_app > a > img{
+                        width:150px;
+                        height:70px;
+                    }
+
+                /* #endregion */              
+
+            /* #endregion */       
+
+        /* #endregion */    
+
+/* Site Responsivp XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* Tablet */
+@media (max-width: 1024px){
+
+    #site_wrapper{
+        width: 80%;
+    }    
+}
+
+/* Mobile */
+@media (max-width: 650px){
+
+    #site_wrapper{
+        width: 90%;
+    }  
+    
+    #column_cellphone{
+        display: none;
+    }
+
+    #column_login{
+        width: 100%;
+    }
+
+    /* Estilizar Blocos do Login */
+    .login_bloco{
+        background-color: transparent;
+        border: none;
+    }
+}
