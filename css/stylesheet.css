@@ -99,11 +99,11 @@
                     
                     /* Container */
                     #login_photo{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;   
-                    border-radius: 100%;
-                    overflow: hidden;  /* Impede que a imagem não exceda o tamanho da div */              
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;   
+                        border-radius: 100%;
+                        overflow: hidden;  /* Impede que a imagem não exceda o tamanho da div */              
                     }
 
                     /* Imagem */
